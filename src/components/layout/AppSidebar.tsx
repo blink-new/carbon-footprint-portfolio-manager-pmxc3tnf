@@ -19,6 +19,8 @@ import {
   BarChart3,
   Settings,
   Leaf,
+  MapPin,
+  Bell,
 } from 'lucide-react'
 
 const menuItems = [
@@ -51,6 +53,18 @@ const menuItems = [
     shortTitle: 'Análisis',
     url: '/analytics',
     icon: BarChart3,
+  },
+  {
+    title: 'Ubicaciones',
+    shortTitle: 'Ubicaciones',
+    url: '/locations',
+    icon: MapPin,
+  },
+  {
+    title: 'Señales',
+    shortTitle: 'Señales',
+    url: '/signals',
+    icon: Bell,
   },
   {
     title: 'Configuración',

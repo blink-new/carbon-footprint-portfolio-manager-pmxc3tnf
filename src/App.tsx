@@ -3,12 +3,15 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Toaster } from '@/components/ui/toaster'
 import { SidebarProvider } from '@/components/ui/sidebar'
 import { AppSidebar } from '@/components/layout/AppSidebar'
+import { AppHeader } from '@/components/layout/AppHeader'
 import Dashboard from '@/pages/Dashboard'
 import CarbonCalculator from '@/pages/CarbonCalculator'
 import PortfolioManager from '@/pages/PortfolioManager'
 import CreditsMarketplace from '@/pages/CreditsMarketplace'
 import Analytics from '@/pages/Analytics'
 import Settings from '@/pages/Settings'
+import LocationsManager from '@/pages/LocationsManager'
+import SignalsConfig from '@/pages/SignalsConfig'
 import './App.css'
 
 function App() {
@@ -18,6 +21,7 @@ function App() {
         <div className="min-h-screen bg-background flex w-full">
           <AppSidebar />
           <main className="flex-1 flex flex-col overflow-hidden">
+            <AppHeader />
             <div className="flex-1 overflow-auto">
               <Routes>
                 <Route path="/" element={<Dashboard />} />
@@ -25,6 +29,8 @@ function App() {
                 <Route path="/portfolio" element={<PortfolioManager />} />
                 <Route path="/marketplace" element={<CreditsMarketplace />} />
                 <Route path="/analytics" element={<Analytics />} />
+                <Route path="/locations" element={<LocationsManager />} />
+                <Route path="/signals" element={<SignalsConfig />} />
                 <Route path="/settings" element={<Settings />} />
               </Routes>
             </div>
