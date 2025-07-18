@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnergyData version="1.0">
+  <Metadata>
+    <Source>Sistema de Gestión Energética</Source>
+    <Period>
+      <Start>2024-01-01</Start>
+      <End>2024-12-31</End>
+    </Period>
+    <GeneratedDate>2024-01-15T10:30:00Z</GeneratedDate>
+  </Metadata>
+  
+  <Locations>
+    <Location>
+      <Name>Oficina Central Madrid</Name>
+      <Address>Calle Gran Vía 28, 28013 Madrid, España</Address>
+      <Type>office</Type>
+      <Coordinates>
+        <Lat>40.4168</Lat>
+        <Lng>-3.7038</Lng>
+      </Coordinates>
+      <Consumption>
+        <Electricity>45000</Electricity> <!-- kWh -->
+        <Gas>8500</Gas> <!-- m³ -->
+        <Water>1200</Water> <!-- m³ -->
+        <Fuel>2500</Fuel> <!-- liters -->
+      </Consumption>
+      <Period>
+        <Start>2024-01-01</Start>
+        <End>2024-12-31</End>
+      </Period>
+    </Location>
+    
+    <Location>
+      <Name>Almacén Barcelona</Name>
+      <Address>Polígono Industrial Can Trias, 08232 Viladecavalls, Barcelona, España</Address>
+      <Type>warehouse</Type>
+      <Coordinates>
+        <Lat>41.3851</Lat>
+        <Lng>2.1734</Lng>
+      </Coordinates>
+      <Consumption>
+        <Electricity>78000</Electricity>
+        <Gas>12000</Gas>
+        <Water>800</Water>
+        <Fuel>15000</Fuel>
+      </Consumption>
+      <Period>
+        <Start>2024-01-01</Start>
+        <End>2024-12-31</End>
+      </Period>
+    </Location>
+    
+    <Location>
+      <Name>Planta Valencia</Name>
+      <Address>Zona Industrial, 46394 Ribarroja del Turia, Valencia, España</Address>
+      <Type>factory</Type>
+      <Coordinates>
+        <Lat>39.4699</Lat>
+        <Lng>-0.3763</Lng>
+      </Coordinates>
+      <Consumption>
+        <Electricity>125000</Electricity>
+        <Gas>25000</Gas>
+        <Water>3500</Water>
+        <Fuel>8000</Fuel>
+      </Consumption>
+      <Period>
+        <Start>2024-01-01</Start>
+        <End>2024-12-31</End>
+      </Period>
+    </Location>
+    
+    <Location>
+      <Name>Centro Distribución Sevilla</Name>
+      <Address>Polígono Industrial Carretera Amarilla, 41007 Sevilla, España</Address>
+      <Type>distribution</Type>
+      <Coordinates>
+        <Lat>37.3886</Lat>
+        <Lng>-5.9823</Lng>
+      </Coordinates>
+      <Consumption>
+        <Electricity>32000</Electricity>
+        <Gas>4500</Gas>
+        <Water>600</Water>
+        <Fuel>22000</Fuel>
+      </Consumption>
+      <Period>
+        <Start>2024-01-01</Start>
+        <End>2024-12-31</End>
+      </Period>
+    </Location>
+    
+    <Location>
+      <Name>Hub Logístico Zaragoza</Name>
+      <Address>Plaza Logística, 50197 Zaragoza, España</Address>
+      <Type>hub</Type>
+      <Coordinates>
+        <Lat>41.6488</Lat>
+        <Lng>-0.8891</Lng>
+      </Coordinates>
+      <Consumption>
+        <Electricity>65000</Electricity>
+        <Gas>9500</Gas>
+        <Water>1100</Water>
+        <Fuel>12000</Fuel>
+      </Consumption>
+      <Period>
+        <Start>2024-01-01</Start>
+        <End>2024-12-31</End>
+      </Period>
+    </Location>
+  </Locations>
+</EnergyData>

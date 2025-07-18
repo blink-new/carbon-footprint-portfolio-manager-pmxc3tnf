@@ -24,31 +24,37 @@ import {
 const menuItems = [
   {
     title: 'Dashboard',
+    shortTitle: 'Inicio',
     url: '/',
     icon: LayoutDashboard,
   },
   {
-    title: 'Carbon Calculator',
+    title: 'Calculadora',
+    shortTitle: 'Calcular',
     url: '/calculator',
     icon: Calculator,
   },
   {
-    title: 'Portfolio Manager',
+    title: 'Portafolio',
+    shortTitle: 'Portafolio',
     url: '/portfolio',
     icon: Briefcase,
   },
   {
-    title: 'Credits Marketplace',
+    title: 'Mercado',
+    shortTitle: 'Mercado',
     url: '/marketplace',
     icon: ShoppingCart,
   },
   {
-    title: 'Analytics',
+    title: 'Análisis',
+    shortTitle: 'Análisis',
     url: '/analytics',
     icon: BarChart3,
   },
   {
-    title: 'Settings',
+    title: 'Configuración',
+    shortTitle: 'Config',
     url: '/settings',
     icon: Settings,
   },
@@ -59,7 +65,7 @@ export function AppSidebar() {
 
   return (
     <Sidebar>
-      <SidebarHeader className="border-b border-border/40 p-6">
+      <SidebarHeader className="border-b border-border/40 p-4 md:p-6">
         <div className="flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
             <Leaf className="h-4 w-4" />
@@ -67,14 +73,14 @@ export function AppSidebar() {
           <div className="grid flex-1 text-left text-sm leading-tight">
             <span className="truncate font-semibold">Carbon Manager</span>
             <span className="truncate text-xs text-muted-foreground">
-              Footprint & Credits
+              Huella & Créditos
             </span>
           </div>
         </div>
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Application</SidebarGroupLabel>
+          <SidebarGroupLabel className="text-xs">Aplicación</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {menuItems.map((item) => (
@@ -82,10 +88,12 @@ export function AppSidebar() {
                   <SidebarMenuButton
                     asChild
                     isActive={location.pathname === item.url}
+                    className="text-sm"
                   >
                     <Link to={item.url}>
                       <item.icon className="h-4 w-4" />
-                      <span>{item.title}</span>
+                      <span className="hidden sm:inline">{item.title}</span>
+                      <span className="sm:hidden">{item.shortTitle}</span>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
